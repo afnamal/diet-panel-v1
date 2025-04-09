@@ -4,6 +4,6 @@ export const clientRoutes = [
   {
     path: '/client',
     page: ClientHome,
-    allowedRole: 'danışan',
+    allowedRole: 'client',
   },
 ];

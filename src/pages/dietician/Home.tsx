@@ -27,10 +27,7 @@ const Home = () => {
   useEffect(() => {
     const fetchClients = async () => {
       try {
-        const q = query(
-          collection(db, 'users'),
-          where('type', '==', 'danışan')
-        );
+        const q = query(collection(db, 'users'), where('type', '==', 'client'));
         const querySnapshot = await getDocs(q);
         const clientsData = querySnapshot.docs.map((doc) => ({
           id: doc.id,

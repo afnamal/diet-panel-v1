@@ -6,7 +6,7 @@ import { auth, db } from '../firebase';
 function Register() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [type, setType] = useState('diyetisyen');
+  const [type, setType] = useState('dietician');
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   useEffect(() => {
@@ -98,8 +98,8 @@ function Register() {
                 value={type}
                 onChange={(e) => setType(e.target.value)}
               >
-                <option value="diyetisyen">Diyetisyen</option>
-                <option value="danışan">Danışan</option>
+                <option value="dietician">Diyetisyen</option>
+                <option value="client">Danışan</option>
               </select>
             </div>
 
